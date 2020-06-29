@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".slot_Machine_View"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="555 SLOT MACHINE"
+        android:textSize="20sp"
+        android:layout_gravity="center"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BET :"
+            android:id="@+id/bet"
+            android:textSize="15sp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="100"
+            android:id="@+id/betValue"
+            android:textSize="15sp"
+            android:paddingHorizontal="20dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CREDIT :"
+            android:id="@+id/credit"
+            android:textSize="15sp"
+            />
+        <TextView
+            android:id="@+id/creditValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5000"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/name"
+            android:textSize="15sp"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="10dp">
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/img1"
+            android:src="@drawable/dice_1" />
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/img2"
+            android:src="@drawable/dice_1"
+            />
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/img3"
+            android:src="@drawable/dice_1" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="(50) BET"
+            android:textSize="15sp"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="UP"
+            android:textSize="10dp"
+            android:id="@+id/up"
+            android:onClick="mBetting"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DOWN"
+            android:textSize="10dp"
+            android:id="@+id/down"
+            android:onClick="mBetting"/>
+    </LinearLayout>
+
+    <Button
+        android:paddingTop="10dp"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Roulette"
+        android:textSize="10dp"
+        android:id="@+id/start"/>
+    <TextView
+        android:paddingTop="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Roulette 버튼을 누르면 룰렛이 돌아갑니다. \n 손을 때면 결과에 따라 Credit이 변화합니다."
+        android:textSize="15sp"
+        android:layout_gravity="center"
+        />
+    <TextView
+    android:paddingTop="5dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="1-1-1 | 30% | 3배"
+    android:textSize="15sp"
+    android:layout_gravity="center"
+    />
+    <TextView
+        android:paddingTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2-2-2 | 25% | 4배"
+        android:textSize="15sp"
+        android:layout_gravity="center"
+        />
+    <TextView
+        android:paddingTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3-3-3 | 20% | 5배"
+        android:textSize="15sp"
+        android:layout_gravity="center"
+        />
+    <TextView
+        android:paddingTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4-4-4 | 15% | 7배"
+        android:textSize="15sp"
+        android:layout_gravity="center"
+        />
+    <TextView
+        android:paddingTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5-5-5 | 10% | 10배"
+        android:textSize="15sp"
+        android:layout_gravity="center"
+        />
+
+    <Button
+        android:layout_marginTop="30dp"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="다음화면으로"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:background="#A566FF"
+        android:id="@+id/gotoEnding"/>
+    <TextView
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="저장을 원하시면 결과 화면을 보고 종료하세요.~"
+        android:textColor="#FFE400"
+        android:textSize="20sp"
+        android:layout_gravity="center"
+        />
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="종료"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:background="#A566FF"
+        android:id="@+id/close"/>
+
+
+</LinearLayout>
